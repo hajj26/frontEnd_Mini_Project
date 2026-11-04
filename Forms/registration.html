@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>registration page</title>
+</head>
+<body>
+    
+    <div class="registration">
+        <div class="form_info">
+            <div class="top">
+                <img src="Images/User Group.png" alt="">
+            </div>
+            <div class="middle">
+                <h3>Join Our Platform</h3>
+                <p><i>Create your account and get started with our amizing services</i></p>
+            </div>
+            <div class="bottom">
+                <img src="Images/laptop.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="form">
+            <form action="" name="RegForm">
+                <h4>Registration Form</h4>
+                <p>Fill in the details below to create your account</p>
+                <div class="input_box">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="First Name">
+                </div>
+
+                <div class="input_box">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Middle Name">
+                </div>
+
+                <div class="input_box">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Last Name">
+                </div>
+
+                <div class="input_box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Email Address">
+                </div>
+
+                <div class="input_box">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="tel" placeholder="Phone Number">
+                </div>
+
+                <div class="input_box">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                    <i class="fa-solid fa-eye-slash"></i>
+                </div>
+
+                <div class="input_box">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Confirm Password">
+                    <i class="fa-solid fa-eye-slash"></i>
+                </div>
+
+                <div class="gendTerm">
+                    <p>Gender</p>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+
+                    <input type="radio" id="others" name="gender" value="others">
+                    <label for="others">Others</label>
+                </div>
+
+                <div class="gendTerms">
+                    <input type="checkbox" id="check">
+                    <label for="check">I agree to the <span id="terms"><a href="">Terms & Services</a></span></label>
+                </div>
+
+                <button type="submit">Register</button>
+
+                <p id="acc_alr">Arleady have an account? <span id="account_arleady"><a href="">Login</a></span></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
