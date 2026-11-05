@@ -1,0 +1,162 @@
+
+
+.left{
+    background-color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.right{
+    background-color: white;
+    padding-left: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+body{
+    background-color: mediumpurple;
+}
+
+.body_container{
+    width: 65%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.top{
+    margin-top: 25px;
+    width: 100px;
+    height: 100px;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle h3{
+    margin-top: 40px;
+}
+
+.top i{
+    color: whitesmoke;
+    font-size: inherit;
+}
+
+.bottom{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.bottom img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.middle{
+    width: 50%;
+}
+.middle p{
+    width: 100%;
+}
+button{
+    background-color: lightskyblue;
+    border-radius: 10px;
+    width: 50%;
+    padding-block: 5px;
+    margin-left: 13%;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="checkbox"] {
+    accent-color: blue;
+}
+
+.input{
+    position: relative;
+}
+.input i:first-child{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.input i:last-child{
+    position: absolute;
+    left: 68%;
+    top: 10px;
+}
+
+.input input{
+    width: 70%;
+    height: 30px;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    outline: none;
+    border-radius: 10px;
+}
+
+#forgot a{
+    text-decoration: none;
+    color: blue;
+    font-size: smaller;
+}
+
+label{
+    font-size: smaller;
+}
+input::placeholder{
+    text-align: left;
+}
+
+.company_icon{
+    width: 80%;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company_icon p{
+    font-size: smaller;
+}
+
+
+.brand_icon i{
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: x-large;
+    border: 1.4px solid darkgrey;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stick_para{
+    font-size: smaller;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+.stick{
+    display: inline-block;
+    width: 20%;
+    height: 1.4px;
+    background-color: darkgrey;
+}
+
+p a{
+    text-decoration: none;
+    color: blue;
+}
