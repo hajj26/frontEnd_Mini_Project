@@ -1,0 +1,153 @@
+
+
+.top{
+    background-color: gainsboro;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding-inline: 4%;
+    font-size: smaller;
+}
+
+.left{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.left i{
+    color: rgb(76, 76, 211);
+}
+.mate{
+    color: rgb(76, 76, 211);
+}
+
+.right{
+    display: grid;
+    grid-template-columns: repeat(3,33.3%);
+}
+
+.right p:last-child i:last-child{
+    cursor: pointer;
+    font-size: 12px;
+}
+
+#h2{
+    text-shadow: 0 6px 5px rgba(0, 0, 0, 0.6);
+}
+
+.lower{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    font-size: smaller;
+    align-items: center;
+    padding-block: 15px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.left_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+.font_awesome_icon{
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+    justify-content: space-between;
+    margin-left: 15%;
+}
+.font_awesome_icon i:first-child{
+    font-size: 18px;
+    cursor: pointer;
+}
+.font_awesome_icon i:nth-child(2) {
+    font-size: 18px;
+    cursor: pointer;
+}
+.userLog i:first-child {
+    display: inline-flex;
+    color: white;
+    background-color: rgb(76, 76, 211);
+    align-items: center;
+    justify-content: center;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    
+}
+.userLog i:last-child{
+    font-size: 11px;
+    color: black;
+    cursor: pointer;
+}
+
+.userLog{
+    display: inline-flex;
+    align-items: center;
+}
+.center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 30px;
+}
+
+#btn{
+    padding-inline: 5px;
+    padding-block: 6px;
+    background-color: rgb(76, 76, 211);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+#btn i{
+    color: white;
+}
+.cart_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 50px;
+    font-size: 48px;
+}
+
+.shop_head > *{
+    margin: 0;
+    padding: 0;
+}
+.cart_icon i{
+    color: rgb(76, 76, 211);
+    font-size: inherit;
+}
+
+.right_2{
+    margin-left: 25px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.right_22{
+    position: relative;
+}
+.right_22 i{
+    position: absolute;
+    left: 2%;
+    top: 32%;
+}
+.right_2 input{
+    width: 100%;
+    padding-block: 9px;
+    padding-left: 9%;
+    outline: none;
+    border-radius: 10px;
+}
+
+.spn{
+    padding-left: 2%;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
