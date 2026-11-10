@@ -1,0 +1,223 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(23, 68, 100);
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+    align-items: center;
+    padding-block: 10px;
+}
+
+header .head_cont{
+    color: white;
+}
+header .head_cont_2 {
+    color: rgb(97, 115, 114);
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 6%;
+    font-size: smaller;
+    margin: 0;
+    padding-block: 0;
+}
+.center p *{
+    color: white;
+}
+.center p a{
+    text-decoration: none;
+}
+
+.center i {
+    margin-right: 7px;
+}
+.left{
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    margin: 0;
+
+}
+
+
+
+.left i {
+    font-size: 30px;
+    color: white;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right p * {
+    color: white;
+}
+.right p{
+    color: white;
+}
+.right i:last-child:hover{
+    cursor: pointer;
+}
+
+.background_image{
+    height: 500px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),
+    rgba(43, 98, 85, 0.5)),
+    url('Images/backImage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px;
+    position: relative;
+}
+
+.first_class{
+    width: 30%;
+    position: relative;
+    display: flex;
+    left: 33%;
+}
+
+.first_class i{
+    position: absolute;
+    left: 3%;
+    top: 10px;
+}
+
+input[type="search"] {
+    padding-block: 8px;
+    padding-left: 10%;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+}
+
+.second_class{
+    width: 30%;
+    height: 150px;
+    display: flex;
+    margin-left: 5%;
+    position: absolute;
+    top: 150px;
+    color: white;
+}
+
+.second_class div:first-child {
+    width: 100%;
+    height: 150px;
+}
+.second_class i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 150px;
+    font-style: italic;
+}
+.temperature{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.temperature h1 {
+    font-size: 80px;
+}
+.third_class{
+    width: 25%;
+    margin-left: 5%;
+    margin-top: 4px;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 325px;
+    font-style: italic;
+    color: white;
+    /*flex-end depend on flex direction and end depend on writing direction*/
+}
+
+
+.fourth_class{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    width: 50%;
+    margin-left: 4%;
+    margin-top: 15px;
+    position: absolute;
+    top: 380px;
+    color: white;
+}
+.span_1{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.fourth_class div{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.fourth_class div p{
+    font-size: smaller;
+}
+.fourth_class div i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.stick {
+    border-right: 2px solid white;
+}
+
+footer{
+    background-color: rgb(23, 68, 100);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 10px;
+}
+
+.footer_cont_1 {
+    display: flex;
+    align-items: center;
+}
+
+.footer_cont_2 {
+    display: flex;
+    align-items: center;
+    padding-block: 10px;
+}
+.footer_cont_2 div:first-child i{
+    font-size: 20px;
+    color: lightskyblue;
+}
+
+.footer_cont_2 div:first-child a{
+    display: inline-flex;
+    margin-right: 7px;
+}
+
+.footer_cont_2 div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    font-size: smaller;
+    color: white;
+}
+
+.sp_2 {
+    color: rgb(97, 115, 114);
+}
+.sp_1 {
+    color: white;
+}
