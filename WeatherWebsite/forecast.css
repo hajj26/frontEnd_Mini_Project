@@ -1,3 +1,9 @@
+:root {
+    --header_bgcolor :  rgb(23, 68, 100);
+    --span_color :  rgb(97, 115, 114);
+    --table_bgcolor :  rgb(141, 174, 176);
+}
+
 
 *{
     margin: 0;
@@ -5,7 +11,7 @@
 }
 
 header{
-    background-color: rgb(23, 68, 100);
+    background-color: var(--header_bgcolor);
     display: grid;
     grid-template-columns: 30% 60% 10%;
     align-items: center;
@@ -16,7 +22,7 @@ header .head_cont{
     color: white;
 }
 header .head_cont_2 {
-    color: rgb(97, 115, 114);
+    color: var(--span_color);
 }
 
 .center{
@@ -31,6 +37,7 @@ header .head_cont_2 {
 .center p *{
     color: white;
 }
+
 .center p a{
     text-decoration: none;
 }
@@ -163,8 +170,67 @@ footer{
 }
 
 .sp_2 {
-    color: rgb(97, 115, 114);
+    color: var(--span_color);
 }
 .sp_1 {
     color: white;
+}
+
+.main_middle{
+    width: 90%;
+    display: grid;
+    gap: 2%;
+    margin: 20px auto 0px;
+    grid-template-columns: repeat(5,18%);
+}
+
+.main_bottom{
+    width: 60%;
+    display: grid;
+    gap: 2%;
+    margin: 20px auto;
+    grid-template-columns: 59% 39%;
+}
+
+table {
+    border: 1px solid gray;
+    background-color: var(--table_bgcolor);
+    border-collapse: collapse;
+    cursor: pointer;
+}
+
+th, td {
+    padding-block: 5px;
+    text-align: center;
+}
+thead th {
+    background-color: var(--header_bgcolor);
+    color: white;
+    font-size: smaller;
+}
+
+a:active {
+    /* acivated link (show during the event) */
+    color: brown;
+}
+
+a.current {
+    /* current page */
+    color: skyblue;
+}
+
+/*
+a:link {} show unvisited link
+a:visited {} for visited link
+*/
+
+#map {
+    width: 50%;
+    margin: 0 auto;
+    padding-inline: 4px;
+    padding-block: 7px;
+    border-radius: 10px;
+    color: white;
+    font-size: smaller;
+    background-color: var(--header_bgcolor);
 }

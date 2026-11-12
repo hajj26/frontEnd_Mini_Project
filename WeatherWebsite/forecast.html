@@ -15,8 +15,8 @@
         </div>
 
         <div class="center">
-            <p><a href=""><i class="fa-solid fa-house"></i>Home</a></p>
-            <p><a href=""><i class="fa-solid fa-chart-simple"></i>Forecast</a></p>
+            <p><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></p>
+            <p><a href="forecast.html" class="current"><i class="fa-solid fa-chart-simple"></i>Forecast</a></p>
             <p><a href=""><i class="fa-solid fa-info"></i>About</a></p>
             <p><a href=""><i class="fa-solid fa-phone"></i>Contact</a></p>
         </div>
@@ -34,16 +34,165 @@
         </div>
 
         <div class="main_middle">
-            <table></table>
-            <table></table>
-            <table></table>
-            <table></table>
-            <table></table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mon,&nbsp;Nov 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="font-size: 20px; color: yellow;"><i class="fa-solid fa-sun"></i></td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: smaller;">30&deg;C</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: smaller;">22&deg;C</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: smaller;">sunny</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tue,&nbsp;Nov 11</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="font-size: 20px;"><i class="fa-solid fa-cloud-sun"></i></td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: smaller;">29&deg;C</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: smaller;">21&deg;C</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: smaller;">Partly Cloudy</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Wed,&nbsp;Nov 12</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="font-size: 20px; color: rgb(34, 109, 230);"><i class="fa-solid fa-cloud-showers-heavy"></i></td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: smaller;">27&deg;C</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: smaller;">20&deg;C</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: smaller;">Light Rain</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Thu,&nbsp;Nov 13</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="font-size: 20px;"><i class="fa-solid fa-sun"></i></td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: smaller;">31&deg;C</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: smaller;">23&deg;C</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: smaller;">sunny</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fri,&nbsp;Nov 14</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="font-size: 20px;"><i class="fa-solid fa-cloud-sun"></i></td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: smaller;">30&deg;C</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: smaller;">22&deg;C</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: smaller;">Partly Cloudy</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <div class="main_bottom">
-            <table></table>
-            <table></table>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4"><i class="fa-solid fa-temperature-three-quarters"></i>&nbsp;Current Weather</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="4" style="font-size: 45px; color: yellow;"><i class="fa-solid fa-sun"></i></td>
+                        <td rowspan="2" style="font-size: 45px;">28&deg;C</td>
+                        <td style="font-size: smaller;"><i class="fa-solid fa-droplet"></i>&nbsp;Humidity</td>
+                        <td style="font-size: smaller;">76%</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: smaller;"><i class="fa-solid fa-gauge"></i>&nbsp;Pressure</td>
+                        <td style="font-size: smaller;">1012hPa</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Mostly Sunny</td>
+                        <td style="font-size: smaller;"><i class="fa-solid fa-eye"></i>&nbsp;Visibility</td>
+                        <td style="font-size: smaller;">10km</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: smaller;"><i class="fa-solid fa-wind"></i>&nbsp;Wind Speed</td>
+                        <td style="font-size: smaller;">12km/hr</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th><i class="fa-solid fa-location-dot"></i>&nbsp;Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><i class="fa-solid fa-location-dot"></i>&nbsp;Dar Es Salaam</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th><p id="map"><i class="fa-regular fa-map"></i>&nbsp;View on map</p></th>
+                    </tr>
+                </tfoot>
+            </table>
+
         </div>
     </main>
 

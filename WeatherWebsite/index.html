@@ -15,8 +15,8 @@
         </div>
 
         <div class="center">
-            <p><a href=""><i class="fa-solid fa-house"></i>Home</a></p>
-            <p><a href=""><i class="fa-solid fa-chart-simple"></i>Forecast</a></p>
+            <p><a href="index.html" class="current"><i class="fa-solid fa-house"></i>Home</a></p>
+            <p><a href="forecast.html"><i class="fa-solid fa-chart-simple"></i>Forecast</a></p>
             <p><a href=""><i class="fa-solid fa-info"></i>About</a></p>
             <p><a href=""><i class="fa-solid fa-phone"></i>Contact</a></p>
         </div>
@@ -69,11 +69,110 @@
             </div>
         </div>
 
-        <div class="table">
-            <table></table>
-            <table></table>
-            <table></table>
+        <div class="table_container">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="5"><i class="fa-solid fa-calendar"></i>
+                            5-Day Forecast
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Mon</td>
+                        <td>Tue</td>
+                        <td>Wed</td>
+                        <td>Thu</td>
+                        <td>Fri</td>
+                    </tr>
+                    <tr>
+                        <td>Nov 10</td>
+                        <td>Nov 11</td>
+                        <td>Nov 12</td>
+                        <td>Nov 13</td>
+                        <td>Nov 14</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-cloud-sun-rain"></i></td>
+                        <td><i class="fa-solid fa-cloud-sun-rain"></i></td>
+                        <td><i class="fa-solid fa-cloud-sun-rain"></i></td>
+                        <td><i class="fa-solid fa-cloud-sun-rain"></i></td>
+                        <td><i class="fa-solid fa-cloud-sun-rain"></i></td>
+                    </tr>
+                    <tr>
+                        <td>30&deg;C</td>
+                        <td>29&deg;C</td>
+                        <td>30&deg;C</td>
+                        <td>27&deg;C</td>
+                        <td>29&deg;C</td>
+                    </tr>
+                    <tr>
+                        <td>29&deg;C</td>
+                        <td>27&deg;C</td>
+                        <td>28&deg;C</td>
+                        <td>26&deg;C</td>
+                        <td>28&deg;C</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Weather Details
+                    </th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><i class="fa-solid fa-temperature-three-quarters"></i>&nbsp;Feels Like</td>
+                        <td>31&deg;C</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-gauge"></i>&nbsp;Pressure</td>
+                        <td>1012hPa</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-regular fa-eye"></i>&nbsp;Visibility</td>
+                        <td>10km</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-droplet"></i>&nbsp;Humidity</td>
+                        <td>76%</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-wind"></i>&nbsp;Wind Speed</td>
+                        <td>12km/hr</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Location
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><i class="fa-solid fa-location-dot"></i>
+                        Dar Es Salaam</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th><p id="map"><i class="fa-regular fa-map"></i>&nbsp;View on map</p></th>
+                    </tr>
+                </tfoot>
+            </table>
         </div>
+
     </main>
 
     <footer>

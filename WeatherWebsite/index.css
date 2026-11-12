@@ -1,11 +1,20 @@
 
+
+:root {
+    --header_bgcolor :  rgb(23, 68, 100);
+    --span_color :  rgb(97, 115, 114);
+    --body_bgcolor :  whitesmoke;
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
 }
 
 header{
-    background-color: rgb(23, 68, 100);
+    background-color: var(--header_bgcolor);
     display: grid;
     grid-template-columns: 30% 60% 10%;
     align-items: center;
@@ -16,7 +25,7 @@ header .head_cont{
     color: white;
 }
 header .head_cont_2 {
-    color: rgb(97, 115, 114);
+    color: var(--span_color);
 }
 
 .center{
@@ -66,6 +75,10 @@ header .head_cont_2 {
 }
 .right i:last-child:hover{
     cursor: pointer;
+}
+
+body {
+    background-color: var(--body_bgcolor);
 }
 
 .background_image{
@@ -180,7 +193,7 @@ input[type="search"] {
 }
 
 footer{
-    background-color: rgb(23, 68, 100);
+    background-color: var(--header_bgcolor);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -216,8 +229,64 @@ footer{
 }
 
 .sp_2 {
-    color: rgb(97, 115, 114);
+    color: var(--span_color);
 }
 .sp_1 {
     color: white;
+}
+
+.table_container{
+    width: 95%;
+    gap: 2%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 46% 28% 18%;
+}
+.table_container table:last-child td{
+    text-align: center;
+}
+
+
+td, th {
+    font-size: smaller;
+    padding-block: 8px;
+    padding-inline: 2%;
+}
+td {
+    text-align: left;
+}
+thead {
+    background-color:  var(--header_bgcolor);
+    color: white;
+}
+tr:nth-child(even) {
+    background-color:  rgb(97, 115, 114);
+}
+
+table{
+    border: 1px solid gray;
+    border-collapse: collapse;    
+}
+table:hover {
+    cursor: pointer;
+}
+
+a:active {
+    /* acivated link (show during the event) */
+    color: brown;
+}
+
+a.current {
+    /* current page */
+    color: skyblue;
+}
+
+#map {
+    width: 50%;
+    margin: 0 auto;
+    padding-inline: 4px;
+    padding-block: 7px;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--header_bgcolor);
 }
