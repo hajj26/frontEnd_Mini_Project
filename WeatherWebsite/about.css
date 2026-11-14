@@ -272,3 +272,10 @@ footer{
     font-size: smaller;
     color: white;
 }
+
+.sp_2 {
+    color: var(--span_color);
+}
+.sp_1 {
+    color: white;
+}
