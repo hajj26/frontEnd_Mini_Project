@@ -30,31 +30,34 @@
     <main>
         <div class="background_image">
             <div class="first_class">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="search" placeholder="Search City">
+                <form action="" id="search_inputForm" autocomplete="off">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" id="search_city" placeholder="Search City" autofocus>
+                    <input type="image" src="Images/circle-arrow-.png" id="subImage" width="25px" height="25px">
+                </form>
             </div>
 
             <div class="second_class">
                 <div class="sun_icon"><i class="fa-solid fa-cloud-sun-rain"></i></div>
                 <div class="temperature">
-                    <h1>28<sup>&deg;</sup>C</h1>
+                    <h1><span  class="headerTemp">0.0</span><sup>&deg;</sup>C</h1>
                     <p>Partly Cloudy</p>
                 </div>
             </div>
 
             <div class="third_class">
-                <i class="fa-solid fa-location-dot"></i>Dar Es Salaam,&nbsp;Tanzania
+                <i class="fa-solid fa-location-dot"></i><span class="location_name">Unknown</span>,&nbsp;Tanzania
             </div>
 
             <div class="fourth_class">
                 <div class="stick">
                     <i class="fa-solid fa-temperature-half"></i>
-                    <p><span class="span_1">Humidity</span><span>76%</span></p>
+                    <p><span class="span_1">Humidity</span><span class="humid">0</span>%</p>
                 </div>
 
                 <div class="stick">
                     <i class="fa-solid fa-wind"></i>
-                    <p><span class="span_1">Wind</span><span>12km/h</span></p>
+                    <p><span class="span_1">Wind</span><span class="wind">0</span>km/h</p>
                 </div>
                 
                 <div class="stick">
@@ -129,7 +132,7 @@
                 <tbody>
                     <tr>
                         <td><i class="fa-solid fa-temperature-three-quarters"></i>&nbsp;Feels Like</td>
-                        <td>31&deg;C</td>
+                        <td><span  class="headerTemp">0.0</span>&deg;C</td>
                     </tr>
                     <tr>
                         <td><i class="fa-solid fa-gauge"></i>&nbsp;Pressure</td>
@@ -141,11 +144,11 @@
                     </tr>
                     <tr>
                         <td><i class="fa-solid fa-droplet"></i>&nbsp;Humidity</td>
-                        <td>76%</td>
+                        <td><span  class="humid">0</span>%</td>
                     </tr>
                     <tr>
                         <td><i class="fa-solid fa-wind"></i>&nbsp;Wind Speed</td>
-                        <td>12km/hr</td>
+                        <td><span   class="wind">0</span>km/hr</td>
                     </tr>
                 </tbody>
             </table>
@@ -162,7 +165,7 @@
                 <tbody>
                     <tr>
                         <td><i class="fa-solid fa-location-dot"></i>
-                        Dar Es Salaam</td>
+                        <span class="location_name">Unknown</span></td>
                     </tr>
                 </tbody>
                 <tfoot>
@@ -194,5 +197,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="index.js" defer>
+
+    </script>
 </body>
 </html>

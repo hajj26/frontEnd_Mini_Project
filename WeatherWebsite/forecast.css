@@ -10,6 +10,13 @@
     padding: 0;
 }
 
+#formCity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 header{
     background-color: var(--header_bgcolor);
     display: grid;
@@ -112,15 +119,20 @@ main {
 
 .magnify {
     position: relative;
-    width: 65%;
+    width: 100%;
     height: 30px;
 }
-.magnify input {
+.magnify #searchBar {
     width: 100%;
     height: 100%;
     border-radius: 10px;
     outline: none;
     padding-left: 30px;
+}
+.magnify #SubImage {
+    position: absolute;
+    right: 4%;
+    top: 10%;
 }
 
 .magnify i{

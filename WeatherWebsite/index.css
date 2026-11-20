@@ -13,6 +13,7 @@
     padding: 0;
 }
 
+
 header{
     background-color: var(--header_bgcolor);
     display: grid;
@@ -99,6 +100,14 @@ body {
     display: flex;
     left: 33%;
 }
+.first_class form{
+    width: 100%;
+}
+.first_class input#subImage {
+    position: absolute;
+    right: 10%;
+    top: 20%;
+}
 
 .first_class i{
     position: absolute;
@@ -115,7 +124,7 @@ input[type="search"] {
 }
 
 .second_class{
-    width: 30%;
+    width: 35%;
     height: 150px;
     display: flex;
     margin-left: 5%;

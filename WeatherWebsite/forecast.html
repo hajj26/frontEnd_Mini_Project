@@ -28,16 +28,21 @@
 
     <main>
         <div class="main_top">
-            <h2><i class="fa-solid fa-calendar"></i>5-Day Forecast</h2>
-            <p id="top_block">Plan ahead with accurate weather forecast</p>
-            <p class="magnify"><i class="fa-solid fa-magnifying-glass"></i><input type="search" placeholder="Search City"></p>
+            <form action="" id="formCity">
+                <h2><i class="fa-solid fa-calendar"></i>5-Day Forecast</h2>
+                <p id="top_block">Plan ahead with accurate weather forecast</p>
+                <p class="magnify"><i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" id="searchBar" placeholder="Search City" autofocus>
+                <input type="image" src="Images/circle-arrow-.png" id="SubImage" width="25px" height="25px">
+                </p>
+            </form>
         </div>
 
         <div class="main_middle">
             <table>
                 <thead>
                     <tr>
-                        <th>Mon,&nbsp;Nov 10</th>
+                        <th class="displayDate">--------</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -45,10 +50,10 @@
                         <td style="font-size: 20px; color: yellow;"><i class="fa-solid fa-sun"></i></td>
                     </tr>
                     <tr>
-                        <td style="font-size: smaller;">30&deg;C</td>
+                        <td style="font-size: smaller;"><span class="max">--</span>&deg;C</td>
                     </tr>
                     <tr>
-                        <td style="font-size: smaller;">22&deg;C</td>
+                        <td style="font-size: smaller;"><span class="min">--</span>&deg;C</td>
                     </tr>
                     <tr>
                         <td style="font-size: smaller;">sunny</td>
@@ -59,7 +64,7 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Tue,&nbsp;Nov 11</th>
+                        <th class="displayDate">--------</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -67,10 +72,10 @@
                         <td style="font-size: 20px;"><i class="fa-solid fa-cloud-sun"></i></td>
                     </tr>
                     <tr>
-                        <td style="font-size: smaller;">29&deg;C</td>
+                        <td style="font-size: smaller;"><span class="max">--</span>&deg;C</td>
                     </tr>
                     <tr>
-                        <td style="font-size: smaller;">21&deg;C</td>
+                        <td style="font-size: smaller;"><span class="min">--</span>&deg;C</td>
                     </tr>
                     <tr>
                         <td style="font-size: smaller;">Partly Cloudy</td>
@@ -81,7 +86,7 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Wed,&nbsp;Nov 12</th>
+                        <th class="displayDate">--------</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -89,10 +94,10 @@
                         <td style="font-size: 20px; color: rgb(34, 109, 230);"><i class="fa-solid fa-cloud-showers-heavy"></i></td>
                     </tr>
                     <tr>
-                        <td style="font-size: smaller;">27&deg;C</td>
+                        <td style="font-size: smaller;"><span class="max">--</span>&deg;C</td>
                     </tr>
                     <tr>
-                        <td style="font-size: smaller;">20&deg;C</td>
+                        <td style="font-size: smaller;"><span class="min">--</span>&deg;C</td>
                     </tr>
                     <tr>
                         <td style="font-size: smaller;">Light Rain</td>
@@ -103,7 +108,7 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Thu,&nbsp;Nov 13</th>
+                        <th class="displayDate">--------</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -111,10 +116,10 @@
                         <td style="font-size: 20px;"><i class="fa-solid fa-sun"></i></td>
                     </tr>
                     <tr>
-                        <td style="font-size: smaller;">31&deg;C</td>
+                        <td style="font-size: smaller;"><span class="max">--</span>&deg;C</td>
                     </tr>
                     <tr>
-                        <td style="font-size: smaller;">23&deg;C</td>
+                        <td style="font-size: smaller;"><span class="min">--</span>&deg;C</td>
                     </tr>
                     <tr>
                         <td style="font-size: smaller;">sunny</td>
@@ -125,7 +130,7 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Fri,&nbsp;Nov 14</th>
+                        <th class="displayDate">--------</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -133,10 +138,10 @@
                         <td style="font-size: 20px;"><i class="fa-solid fa-cloud-sun"></i></td>
                     </tr>
                     <tr>
-                        <td style="font-size: smaller;">30&deg;C</td>
+                        <td style="font-size: smaller;"><span class="max">--</span>&deg;C</td>
                     </tr>
                     <tr>
-                        <td style="font-size: smaller;">22&deg;C</td>
+                        <td style="font-size: smaller;"><span class="min">--</span>&deg;C</td>
                     </tr>
                     <tr>
                         <td style="font-size: smaller;">Partly Cloudy</td>
@@ -183,7 +188,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><i class="fa-solid fa-location-dot"></i>&nbsp;Dar Es Salaam</td>
+                        <td><i class="fa-solid fa-location-dot"></i>&nbsp;<span id="loc_name">Unknown</span></td>
                     </tr>
                 </tbody>
                 <tfoot>
@@ -216,5 +221,8 @@
         </div>
     </footer>
     
+    <script src="forecast.js" defer>
+
+    </script>
 </body>
 </html>
