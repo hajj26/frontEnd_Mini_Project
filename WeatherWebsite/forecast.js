@@ -8,6 +8,7 @@ form.addEventListener("submit",function(event){
 
     if(input === ""){
         alert("input city");
+        return;
     }
 
     getData(input);
